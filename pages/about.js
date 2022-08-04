@@ -13,7 +13,7 @@ const About = () => {
         </div>
         <div className={styles.about_info}>
           <p>
-            Hey! I'm Parul Sain, a UG student. I always love to explore new
+            Hey! I am Parul Sain, a UG student. I always love to explore new
             things and always eager to learn and experiment .
           </p>
           <p>
@@ -24,7 +24,7 @@ const About = () => {
           </p>
           <p>
             For me, a website is all about experience. New technologies excite
-            me and motivates me to explore more. Currently, I'm looking for
+            me and motivates me to explore more. Currently, I am looking for
             internship in a fast paced startup.
           </p>
         </div>

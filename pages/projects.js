@@ -2,6 +2,7 @@ import styles from "../styles/Projects.module.css";
 import { clones } from "../constants/constant";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -15,10 +16,16 @@ const Projects = () => {
         </div>
         <div className={styles.projects}>
           <div>
-            {clones.map(({ href, title, description, image }) => (
-              <div className={styles.single_clone}>
+            {clones.map(({ id, href, title, description, image }) => (
+              <div className={styles.single_clone} key={id}>
                 <Link href={href}>
-                  <img target="_blank" src={image} alt="" />
+                  <Image
+                    target="_blank"
+                    src={image}
+                    alt="projects"
+                    width={290}
+                    height={180}
+                  />
                 </Link>
                 <Link href={href}>
                   <h3 target="_blank"> {title}</h3>
