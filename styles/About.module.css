@@ -1,0 +1,56 @@
+.about {
+  height: 90vh;
+  overflow: hidden;
+  background-color: rgb(157, 214, 157);
+  padding: 1rem 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.about_page > h1 {
+  font-size: 5vw;
+  font-weight: 700;
+  color: rgb(5, 106, 5);
+}
+
+.about_info {
+  padding: 20px;
+  width: 70%;
+  border: 5px solid #fff;
+  min-height: 40vh;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_info > p {
+  font-size: 1.5vw;
+  font-weight: 150;
+  font-family: sans-serif;
+}
+
+.about_info > p >span {
+  color: red;
+}
+
+@media screen and (max-width:450px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .about_page > h1 {
+    font-size: 40px;
+  }
+  .about_info {
+    height: 100%;
+    width: 100%;
+  }
+  .about_info > p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
